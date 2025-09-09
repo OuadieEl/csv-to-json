@@ -49,8 +49,8 @@ build-all: clean
 	@echo "==> Building all targets"
 	@$(MAKE) build-platform GOOS=linux GOARCH=amd64
 	@$(MAKE) build-platform GOOS=linux GOARCH=arm64
-	@$(MAKE) build-platform GOOS=windows GOARCH=amd64
-	@$(MAKE) build-platform GOOS=windows GOARCH=arm64
+	@$(MAKE) build-platform GOOS=windows GOARCH=amd64 EXT=.exe
+	@$(MAKE) build-platform GOOS=windows GOARCH=arm64 EXT=.exe
 	@$(MAKE) build-platform GOOS=darwin GOARCH=amd64
 	@$(MAKE) build-platform GOOS=darwin GOARCH=arm64
 
